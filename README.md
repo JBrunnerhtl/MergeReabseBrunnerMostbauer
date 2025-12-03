@@ -98,3 +98,26 @@ Date:   Wed Dec 3 17:58:24 2025 +0100
 
 commit 0c469e5beeb16f47162851c02b96dd86671eb3f7
 ```
+
+## Schrit 10, 11, 12 - Rebase Version
+- Extra branches statt extra repo
+- Branches `rebaseMain` und `rebase-a-feature` wurden nach Schritt 9 gebranched
+- `git checkout rebase-a-feature` um den nächsten command auf der rebase-a-feature branch verwenden zu können
+- `git rebase rebaseMain` um zu rebasen
+- Git history nach dem rebasen:
+```
+❯ git log --graph
+* commit 0d1e04bc5a991647962a16b0d8838f0f7a0402ba (HEAD -> rebase-a-feature)
+| Author: Julian Mostbauer <julian.mostbauer@outlook.com>
+| Date:   Wed Dec 3 12:22:22 2025 +0100
+| 
+|     added more lines on onBranch.md
+| 
+* commit 31f05acb4bf2f7f2877013cdd164d5f07ff54308
+| Author: JBrunnerhtl <j.brunner1@students.htl-leonding.ac.at>
+| Date:   Wed Dec 3 12:17:45 2025 +0100
+| 
+|     added file onBranch.md
+| 
+```
+- Unterschied zum mergen: Keine Merge commits sind vorhanden. Nur die wirklichen commits vom originalen branch.
