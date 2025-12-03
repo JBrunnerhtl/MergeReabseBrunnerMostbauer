@@ -59,3 +59,42 @@
 ```
 
 ## Schritt 10, 11, 12
+- Mit dem Befehl `git checkout a-feature` wechseln Sie auf den Feature Branch und mit dem Befehl `git merge main` mergen Sie den main Branch auf den Feature Branch.
+- Hier unten sehe sie die Git history
+```
+commit 66a49819b029f3ba220e91ed4339d5b3967f0e4b (HEAD -> a-feature, origin/a-feature)
+Merge: f217bf2 d073c13
+Author: JBrunnerhtl <j.brunner1@students.htl-leonding.ac.at>
+Date:   Wed Dec 3 18:06:34 2025 +0100
+
+    Merge branch 'main' into a-feature
+
+commit f217bf2c5b007dc4745cca44ef592ae2fba660f3
+Merge: 140b042 7a9a63e
+Author: JBrunnerhtl <j.brunner1@students.htl-leonding.ac.at>
+Date:   Wed Dec 3 18:04:27 2025 +0100
+
+    merged main
+
+commit 140b0420b193bba068572b1c0e25e6c8a5b4e3ff
+Merge: 6ba549c 2c12ca3
+Author: JBrunnerhtl <j.brunner1@students.htl-leonding.ac.at>
+Date:   Wed Dec 3 18:00:56 2025 +0100
+
+    Merge remote-tracking branch 'origin/a-feature' into a-feature
+
+commit 6ba549cda83da8731a43712c08d3723ab30b6511
+Author: JBrunnerhtl <j.brunner1@students.htl-leonding.ac.at>
+Date:   Wed Dec 3 18:00:22 2025 +0100
+
+    added gitignore
+
+commit d073c13dfcd40de45c2f6b4c714c3d85040c5667 (origin/main, main)
+Merge: 0c469e5 7a9a63e
+Author: Julian Mostbauer <julian.mostbauer@outlook.com>
+Date:   Wed Dec 3 17:58:24 2025 +0100
+
+    Merge branch 'main' of github.com:JBrunnerhtl/MergeReabseBrunnerMostbauer
+
+commit 0c469e5beeb16f47162851c02b96dd86671eb3f7
+```
