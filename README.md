@@ -60,7 +60,7 @@
 
 ## Schritt 10, 11, 12
 - Mit dem Befehl `git checkout a-feature` wechseln Sie auf den Feature Branch und mit dem Befehl `git merge main` mergen Sie den main Branch auf den Feature Branch.
-- Hier unten sehe sie die Git history
+- Hier unten sehen sie die Git history
 ```
 commit 66a49819b029f3ba220e91ed4339d5b3967f0e4b (HEAD -> a-feature, origin/a-feature)
 Merge: f217bf2 d073c13
